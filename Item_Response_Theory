@@ -1,7 +1,7 @@
 ### Work in progress
 
 ### Item Response Theory in Psychological Measurement
-### This repository contains notes and explanatory material on **Item Response Theory (IRT)** This repository will contain notes and related reliability concepts commonly used in psychometrics. It is maintained by Christian Hungate as part of a broader analytics and measurement portfolio.
+### This repository contains notes and explanatory material on **Item Response Theory (IRT)** This repository will contain notes and related reliability concepts commonly used in psychometrics. It is maintained by Christian Hungate as part of a larger analytics portfolio.
 
 Item Response Theory for DICHOTOMOUS Items:
 These are best understood by looking at the items graphically through Item Characteristic Curves (ICC), showing the relationship between the item response and latent trait.

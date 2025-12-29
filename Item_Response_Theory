@@ -1,0 +1,19 @@
+### Work in progress
+
+### Item Response Theory in Psychological Measurement
+### This repository contains notes and explanatory material on **Item Response Theory (IRT)** This repository will contain notes and related reliability concepts commonly used in psychometrics. It is maintained by Christian Hungate as part of a broader analytics and measurement portfolio.
+
+Item Response Theory for DICHOTOMOUS Items:
+These are best understood by looking at the items graphically through Item Characteristic Curves (ICC), showing the relationship between the item response and latent trait.
+The ICC will show the ability of the respondent on the x-axis and the y-axis will show the probability of obtaining accurate results.
+There are three typers of models used: 2-parameter logistic (2PL), 3-parameter logistic (3PL), and the Rasch model (which provides an estimate of item difficulty only, and is the simplest of the three).
+
+ASSUMPTIONS of Dichotomous IRT Models:
+monotonicity, local independence, unidimensionality
+
+
+R: 
+
+### Recommended Sources:
+Educational and Psychological Measurement by W. Holmes Finch and Brian F French
+The Theory and Practice of Item Response Theory by R.J. de Ayala

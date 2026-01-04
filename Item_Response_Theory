@@ -26,6 +26,7 @@ Estimates item difficulty, discrimination, and a guessing parameter.
 library(eRm)
 rasch_model <- RM(irt_data)
 summary(rasch_model)
+coef(rasch_model,simplify=TRUE)
 
 plotICC(
   rasch_model,
@@ -39,6 +40,7 @@ plotICC(
 model_2pl <- mirt(irt_data, 1, itemtype = "2PL")
 summary(model_2pl)
 coef(model_2pl, simplify = TRUE)
+
 plot(
   model_2pl,
   type = "trace",

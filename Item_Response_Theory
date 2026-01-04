@@ -1,5 +1,5 @@
 ### Work in progress ###
-This repository contains notes, explanations, and example code related to Item Response Theory (IRT). The material is intended to support practical implementation in R.
+This repository contains notes, explanations, and example code related to Item Response Theory (IRT). The code found below is intended to support practical implementation using R.
 Maintained by Christian Hungate as part of a broader analytics and quantitative methods portfolio.
 ------------
 Item Response Theory for DICHOTOMOUS Items:
@@ -38,16 +38,34 @@ plotICC(
 ### (2PL)
 model_2pl <- mirt(irt_data, 1, itemtype = "2PL")
 summary(model_2pl)
-
+coef(model_2pl, simplify = TRUE)
 plot(
   model_2pl,
   type = "trace",
   which.items = 1,
   main = "Item Characteristic Curve (2PL Model)"
 )
+
 ------------
 ### R Code
 ### (3PL)
+
+model_3pl <- mirt(
+  irt_data,
+  1,
+  itemtype = "3PL",
+  technical = list(NCYCLES = 1000),
+  verbose = TRUE
+)
+summary(model_3pl)
+coef(model_3pl, simplify = TRUE)
+
+plot(
+  model_3pl,
+  type = "trace",
+  which.items = 1,
+  main = "Item Characteristic Curve (3PL Model)"
+)
 ------------
 
 Recommended Sources:

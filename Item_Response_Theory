@@ -36,6 +36,15 @@ plotICC(
 ------------
 ### R Code
 ### (2PL)
+model_2pl <- mirt(irt_data, 1, itemtype = "2PL")
+summary(model_2pl)
+
+plot(
+  model_2pl,
+  type = "trace",
+  which.items = 1,
+  main = "Item Characteristic Curve (2PL Model)"
+)
 ------------
 ### R Code
 ### (3PL)
